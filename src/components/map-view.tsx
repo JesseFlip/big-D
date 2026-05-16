@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Map, { Marker, Popup, NavigationControl } from "react-map-gl";
+import Map, { Marker, Popup, NavigationControl } from "react-map-gl/mapbox";
 import { MapPin, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";

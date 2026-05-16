@@ -46,12 +46,14 @@ export default function Home() {
               
               {session ? (
                 <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-                  <DialogTrigger asChild>
-                    <Button variant="outline" size="lg" className="px-8 gap-2">
-                      Submit a Spot
-                      <ArrowRight className="h-5 w-5" />
-                    </Button>
-                  </DialogTrigger>
+                  <DialogTrigger
+                    render={
+                      <Button variant="outline" size="lg" className="px-8 gap-2">
+                        Submit a Spot
+                        <ArrowRight className="h-5 w-5" />
+                      </Button>
+                    }
+                  />
                   <DialogContent className="sm:max-w-[525px]">
                     <DialogHeader>
                       <DialogTitle>Submit a Hidden Gem</DialogTitle>
