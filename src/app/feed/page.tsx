@@ -28,7 +28,7 @@ export default async function FeedPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {locations.map((location) => (
+          {locations.map((location: any) => (
             <LocationCard key={location.id} location={location} />
           ))}
         </div>

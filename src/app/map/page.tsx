@@ -19,7 +19,7 @@ export default async function MapPage() {
         </div>
 
         <div className="flex-1 min-h-[500px]">
-          <MapView locations={locations.map(l => ({
+          <MapView locations={locations.map((l: any) => ({
             id: l.id,
             title: l.title,
             category: l.category,
